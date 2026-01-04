@@ -1,0 +1,59 @@
+2025-12-31 11:22:17,512 - INFO - Data processing initialized
+2025-12-31 11:22:18,419 - INFO - Rating data loaded successfully
+2025-12-31 11:22:18,552 - INFO - Users filtered successfully
+2025-12-31 11:22:19,213 - INFO - Rating scaled successfully
+2025-12-31 11:22:19,258 - INFO - Users encoded successfully
+2025-12-31 11:22:19,312 - INFO - Animes encoded successfully
+2025-12-31 11:22:19,840 - INFO - Data split successfully
+2025-12-31 11:22:19,849 - INFO - Artifact user_to_user_encoded saved successfully
+2025-12-31 11:22:19,857 - INFO - Artifact user_to_user_decoded saved successfully
+2025-12-31 11:22:19,889 - INFO - Artifact anime_to_anime_encoded saved successfully
+2025-12-31 11:22:19,922 - INFO - Artifact anime_to_anime_decoded saved successfully
+2025-12-31 11:22:23,375 - INFO - Artifacts saved successfully
+2025-12-31 11:22:27,035 - INFO - Anime data processed successfully
+2025-12-31 11:22:27,037 - INFO - Data processing completed successfully
+2025-12-31 12:55:49,723 - INFO - Model training initialized
+2025-12-31 12:56:49,055 - INFO - Model training initialized
+2025-12-31 12:56:49,089 - INFO - Data loaded successfully
+2025-12-31 12:56:49,111 - INFO - File loaded successfully from config/config.yaml
+2025-12-31 12:56:49,111 - INFO - Config file loaded successfully
+2025-12-31 12:56:49,181 - INFO - Model compiled successfully
+2025-12-31 12:57:10,793 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-12-31 12:57:10,830 - INFO - Model saved at artifacts/model/model.h5
+2025-12-31 12:57:10,831 - INFO - Weights extracted successfully for user_embedding
+2025-12-31 12:57:10,834 - INFO - Weights extracted successfully for anime_embedding
+2025-12-31 12:57:10,834 - ERROR - Error in saving model weights: [Errno 2] No such file or directory: 'artifacts/weights/user_weights.pkl'
+2025-12-31 12:57:10,834 - ERROR - Error in training model: Error in /Users/kristofpella/Desktop/flow/Mlops training/project-2/content-recommender-system/src/model_training.py , line 84 : Error in /Users/kristofpella/Desktop/flow/Mlops training/project-2/content-recommender-system/src/model_training.py , line 114 : [Errno 2] No such file or directory: 'artifacts/weights/user_weights.pkl'
+2025-12-31 12:58:46,431 - INFO - Model training initialized
+2025-12-31 12:58:46,471 - INFO - Data loaded successfully
+2025-12-31 12:58:46,494 - INFO - File loaded successfully from config/config.yaml
+2025-12-31 12:58:46,494 - INFO - Config file loaded successfully
+2025-12-31 12:58:46,538 - INFO - Model compiled successfully
+2025-12-31 12:59:05,547 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-12-31 12:59:05,581 - INFO - Model saved at artifacts/model/model.h5
+2025-12-31 12:59:05,582 - INFO - Weights extracted successfully for user_embedding
+2025-12-31 12:59:05,585 - INFO - Weights extracted successfully for anime_embedding
+2025-12-31 12:59:05,585 - ERROR - Error in saving model weights: [Errno 2] No such file or directory: 'artifacts/weights/user_weights.pkl'
+2025-12-31 12:59:05,585 - ERROR - Error in training model: Error in /Users/kristofpella/Desktop/flow/Mlops training/project-2/content-recommender-system/src/model_training.py , line 84 : Error in /Users/kristofpella/Desktop/flow/Mlops training/project-2/content-recommender-system/src/model_training.py , line 114 : [Errno 2] No such file or directory: 'artifacts/weights/user_weights.pkl'
+2025-12-31 13:00:30,369 - INFO - Model training initialized
+2025-12-31 13:00:30,398 - INFO - Data loaded successfully
+2025-12-31 13:00:30,420 - INFO - File loaded successfully from config/config.yaml
+2025-12-31 13:00:30,420 - INFO - Config file loaded successfully
+2025-12-31 13:00:30,459 - INFO - Model compiled successfully
+2025-12-31 13:00:51,333 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-12-31 13:00:51,379 - INFO - Model saved at artifacts/model/model.h5
+2025-12-31 13:00:51,381 - INFO - Weights extracted successfully for user_embedding
+2025-12-31 13:00:51,383 - INFO - Weights extracted successfully for anime_embedding
+2025-12-31 13:00:51,391 - INFO - Weights saved at artifacts/weights/user_weights.pkl and artifacts/weights/anime_weights.pkl
+2025-12-31 13:00:51,392 - INFO - Model trained successfully and saved at artifacts/model/model.h5
+2025-12-31 13:24:38,214 - INFO - Model training & experiment initialized
+2025-12-31 13:24:39,564 - INFO - Data loaded successfully
+2025-12-31 13:24:39,588 - INFO - File loaded successfully from config/config.yaml
+2025-12-31 13:24:39,588 - INFO - Config file loaded successfully
+2025-12-31 13:24:39,678 - INFO - Model compiled successfully
+2025-12-31 13:25:05,762 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-12-31 13:25:05,802 - INFO - Model saved at artifacts/model/model.h5
+2025-12-31 13:25:05,804 - INFO - Weights extracted successfully for user_embedding
+2025-12-31 13:25:05,806 - INFO - Weights extracted successfully for anime_embedding
+2025-12-31 13:25:05,850 - INFO - Weights saved at artifacts/weights/user_weights.pkl and artifacts/weights/anime_weights.pkl
+2025-12-31 13:25:05,851 - INFO - Model trained successfully and saved at artifacts/model/model.h5

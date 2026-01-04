@@ -1,0 +1,11 @@
+2025-12-29 10:59:21,822 - INFO - File loaded successfully from config/config.yaml
+2025-12-29 10:59:21,823 - INFO - Data ingestion started
+2025-12-29 10:59:21,823 - INFO - Data ingestion started
+2025-12-29 10:59:30,960 - ERROR - Error downloading file: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-12-29 10:59:30,961 - INFO - Data ingestion completed
+2025-12-29 11:05:55,215 - INFO - File loaded successfully from config/config.yaml
+2025-12-29 11:05:55,215 - INFO - Data ingestion started
+2025-12-29 11:05:57,352 - INFO - File anime.csv downloaded successfully
+2025-12-29 11:05:58,607 - INFO - File anime_with_synopsis.csv downloaded successfully
+2025-12-29 11:07:01,223 - INFO - Large file detected and only first 5000000 rows are loaded
+2025-12-29 11:07:01,227 - INFO - Data ingestion completed

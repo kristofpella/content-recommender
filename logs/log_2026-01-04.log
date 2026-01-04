@@ -1,0 +1,25 @@
+2026-01-04 10:35:05,025 - INFO - Data processing initialized
+2026-01-04 10:35:05,560 - INFO - Rating data loaded successfully
+2026-01-04 10:35:05,721 - INFO - Users filtered successfully
+2026-01-04 10:35:06,377 - INFO - Rating scaled successfully
+2026-01-04 10:35:06,413 - INFO - Users encoded successfully
+2026-01-04 10:35:06,454 - INFO - Animes encoded successfully
+2026-01-04 10:35:06,786 - INFO - Data split successfully
+2026-01-04 10:35:06,801 - INFO - Artifact user_to_user_encoded saved successfully
+2026-01-04 10:35:06,809 - INFO - Artifact user_to_user_decoded saved successfully
+2026-01-04 10:35:06,844 - INFO - Artifact anime_to_anime_encoded saved successfully
+2026-01-04 10:35:06,876 - INFO - Artifact anime_to_anime_decoded saved successfully
+2026-01-04 10:35:10,966 - INFO - Artifacts saved successfully
+2026-01-04 10:35:14,886 - INFO - Anime data processed successfully
+2026-01-04 10:35:14,888 - INFO - Data processing completed successfully
+2026-01-04 10:35:19,899 - INFO - Model training & experiment initialized
+2026-01-04 10:35:19,997 - INFO - Data loaded successfully
+2026-01-04 10:35:20,020 - INFO - File loaded successfully from config/config.yaml
+2026-01-04 10:35:20,020 - INFO - Config file loaded successfully
+2026-01-04 10:35:20,092 - INFO - Model compiled successfully
+2026-01-04 10:35:40,713 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2026-01-04 10:35:40,811 - INFO - Model saved at artifacts/model/model.h5
+2026-01-04 10:35:40,814 - INFO - Weights extracted successfully for user_embedding
+2026-01-04 10:35:40,819 - INFO - Weights extracted successfully for anime_embedding
+2026-01-04 10:35:40,908 - INFO - Weights saved at artifacts/weights/user_weights.pkl and artifacts/weights/anime_weights.pkl
+2026-01-04 10:35:40,910 - INFO - Model trained successfully and saved at artifacts/model/model.h5
