@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Welcome to the Hybrid Recommendation System</h1>
+        <form action="/" method="post">
+            <input type="text" name="user_id" placeholder="Enter your user ID">
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </div>
+
+    <div class="recommendations-container">
+        <h2>Recommendations</h2>
+        {% if recommendations %}
+            <ul>
+                {% for recommendation in recommendations %}
+                    <li>{{ recommendation }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
