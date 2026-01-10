@@ -55,14 +55,17 @@ pipeline {
         stage('Build and push image to GCR') {
              steps {
                 withCredentials([file(credentialsId: 'content-recommender-system-service-account', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
-                    echo 'Building and pushing image to GCR...'
+                    echo 'Building and pushing image to GCR using Cloud Build...'
                     sh '''
                     export PATH=$PATH:${GCLOUD_PATH}
                     gcloud auth activate-service-account --key-file=${GOOGLE_APPLICATION_CREDENTIALS}
                     gcloud config set project ${GCP_PROJECT}
-                    gcloud auth configure-docker --quiet
-                    docker build -t gcr.io/${GCP_PROJECT}/content-recommender-system:latest .
-                    docker push gcr.io/${GCP_PROJECT}/content-recommender-system:latest
+                    # Copy credentials file to build context for Dockerfile
+                    cp ${GOOGLE_APPLICATION_CREDENTIALS} grand-principle-480715-v1-bbe44ac95b61.json
+                    # Build and push using Cloud Build
+                    gcloud builds submit --tag gcr.io/${GCP_PROJECT}/content-recommender-system:latest .
+                    # Clean up credentials file
+                    rm -f grand-principle-480715-v1-bbe44ac95b61.json
                     '''
                 }
             }
