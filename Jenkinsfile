@@ -32,7 +32,7 @@ pipeline {
 
         stage('DVC Pull') {
             steps {
-                withCredentials([file(credentialsId: 'grand-principle-480715-v1-bbe44ac95b61.json', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
+                withCredentials([file(credentialsId: 'content-recommender-system-service-account', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     sh '''
                     . ${VENV_DIR}/bin/activate
                     dvc pull
