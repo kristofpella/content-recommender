@@ -1,5 +1,5 @@
-# Use a lightweight Python image
-FROM python:slim
+# Use a lightweight Python image (Python 3.12 for TensorFlow compatibility)
+FROM python:3.12-slim
 
 # Set environment variables to prevent Python from writing .pyc files & Ensure Python output is not buffered
 ENV PYTHONDONTWRITEBYTECODE=1 \
