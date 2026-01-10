@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ml-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: content-recommender-system
+  template:
+    metadata:
+      labels:
+        app: content-recommender-system
+    spec:
+      containers:
+      - name: content-recommender-system
+        image: gcr.io/grand-principle-480715-v1/content-recommender-system:latest
+        ports:
+        - containerPort: 5000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: content-recommender-system-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: content-recommender-system
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
