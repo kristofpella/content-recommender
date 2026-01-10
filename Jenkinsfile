@@ -35,6 +35,14 @@ pipeline {
                 withCredentials([file(credentialsId: 'content-recommender-system-service-account', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     sh '''
                     . ${VENV_DIR}/bin/activate
+                    # Configure DVC remote if it doesn't exist or update credential path
+                    if ! dvc remote list | grep -q myremote; then
+                        echo "Configuring DVC remote..."
+                        dvc remote add -d myremote gs://my-dvc-bucket-28/
+                    fi
+                    dvc remote modify myremote credentialpath ${GOOGLE_APPLICATION_CREDENTIALS}
+                    dvc remote default myremote
+                    echo "Pulling DVC data..."
                     dvc pull
                     '''
                 }
